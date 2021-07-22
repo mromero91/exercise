@@ -1,0 +1,25 @@
+version: "3.7"
+
+volumes:
+  mysql_data:
+
+services:
+  mysql:
+    restart: unless-stopped
+    tty: true
+    command: --sort_buffer_size=512K
+    image: mysql:${MYSQL_VERSION:-8.0.19}
+    expose:
+      - "${DB_PORT:-3306}"
+    ports:
+      - "${DB_PORT:-3306}:${DB_PORT:-3306}"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/dumps:/database/dumps
+      - ./database/create_databases.sql:/docker-entrypoint-initdb.d/001_create_databases.sql
+    environment:
+      MYSQL_USER: ${DB_USERNAME:-developer}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-secret}
+    env_file:
+      - .env
