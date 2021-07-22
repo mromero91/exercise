@@ -13,3 +13,13 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+.ash_history
+.node_repl_history
+/.npm/*
+/.config/*
+/public/css/app.css
+/public/js/app.js
+/public/js/app.js.LICENSE.txt
+/public/js/app.js.LICENSE
+/public/mix-manifest.json
+tmp/
