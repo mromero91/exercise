@@ -42,13 +42,13 @@ then
     --prefer-dist
 
   # clear vars config
-  # php artisan config:clear
+  php artisan config:clear
 
   # clear cache
-  # php artisan cache:clear
+  php artisan cache:clear
 
   # 7: Check npm dependencies, or install:
-  # npm install
+  npm install
 
   # 8: Check if the database exists, or setup the database if it doesn't, as it
   # is the case when the project runs for the first time.
