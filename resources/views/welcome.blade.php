@@ -40,7 +40,7 @@
       }
     </style>
   </head>
-  <body class="">
+  <body>
     @include('nav.landing')
     <main>
       <div class="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -59,7 +59,7 @@
             >
           </span>
         </div>
-        <div class="container relative mx-auto">
+        <div class="container relative">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
@@ -145,11 +145,11 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap grid justify-items-end"
+          <div class="flex flex-wrap grid justify-items-end w-full"
             style="
               background-image: url('{{ asset('img/thanks-tara-winstead-white.jpg') }}');
               background-size: 100% 100%;
-              bacground-position: center;
+              background-position: center;
             "
             >
             <div class="w-full md:w-5/12 px-4">
@@ -170,7 +170,7 @@
                 <img alt="Fundación Dorlan"
                   src="{{ asset('img/logo.jpeg') }}"
                   class="w-full align-middle rounded-t-lg"
-                />
+                  />
                 <blockquote class="relative p-8 mb-4">
                   <svg preserveAspectRatio="none"
                     xmlns="http://www.w3.org/2000/svg"
