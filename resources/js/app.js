@@ -26,6 +26,11 @@
 		require('./components/client/test.vue').default
 	);
 
+	Vue.component(
+		'records',
+		require('./components/Records.vue').default
+	);
+
 	Vue.config.devtools = true;
 
 	const store = new Vuex.Store({

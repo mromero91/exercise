@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+
     {{-- <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/apple-icon.png') }}" /> --}}
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -43,8 +43,7 @@
   </head>
   <body>
     <div id="main">
-      @include('nav.landing')
-      <main class="">
+      <main class="pt-10 mx-auto">
         @yield('content')
       </main>
     </div>
