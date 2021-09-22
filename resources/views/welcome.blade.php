@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <records></records>
+  <div class="mx-8">
+    <records></records>
+  </div>
 @endsection
